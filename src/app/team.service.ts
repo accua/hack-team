@@ -14,4 +14,9 @@ export class TeamService {
   getMembers() {
     return this.members;
   }
+
+  createMember(newMember: Member) {
+    this.members.push(newMember);
+    console.log(newMember)
+  }
 }

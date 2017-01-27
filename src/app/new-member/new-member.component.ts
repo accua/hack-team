@@ -6,7 +6,7 @@ import { TeamService } from '../team.service'
   selector: 'app-new-member',
   templateUrl: './new-member.component.html',
   styleUrls: ['./new-member.component.css'],
-  providers: []
+  providers: [TeamService]
 })
 export class NewMemberComponent implements OnInit {
 
@@ -17,7 +17,8 @@ export class NewMemberComponent implements OnInit {
   }
 
   addTeamMember(name: string, role: string, bio: string) {
-    var newMember: Member = new Member(name, role, bio)
+    var newPerson: Member = new Member(name, role, bio);
+    this.teamService.createMember(newPerson);
   }
 
 }
