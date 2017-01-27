@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TeamListComponent } from './team-list/team-list.component';
 import { AboutComponent } from './about/about.component';
 import { NewMemberComponent } from './new-member/new-member.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -16,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'new-member',
     component: NewMemberComponent
+  },
+  {
+    path: 'members/:id',
+    component: MemberDetailComponent
   }
 ];
 
