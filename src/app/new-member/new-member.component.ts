@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member.model';
-import { TeamService } from '../team.service'
+import { TeamService } from '../team.service';
+import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-new-member',
@@ -16,8 +17,9 @@ export class NewMemberComponent implements OnInit {
   ngOnInit() {
   }
 
-  addTeamMember(name: string, role: string, bio: string) {
+  submitForm(name: string, role: string, bio: string) {
     var newPerson: Member = new Member(name, role, bio);
+    console.log(newPerson)
     this.teamService.createMember(newPerson);
   }
 

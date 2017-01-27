@@ -5,16 +5,16 @@
   <div class="panel-body">
     <div>
       <label>Name</label>
-      <input #name>
+      <input #newName>
     </div>
     <div>
       <label>Role</label>
-      <input #role>
+      <input #newRole>
     </div>
     <div>
       <label>Bio</label>
-      <input #bio>
+      <textarea #newBio></textarea>
     </div>
   </div>
-  <button class="btn btn-default" (click)="addTeamMember(name.value, role.value, bio.value)">Submit New Member</button>
+  <button class="btn btn-default" (click)="submitForm(newName.value, newRole.value, newBio.value); newName.value=''; newRole.value=''; newBio.value=''">Submit New Member</button>
 </div>
