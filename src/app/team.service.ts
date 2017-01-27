@@ -18,4 +18,8 @@ export class TeamService {
   createMember(newMember: Member) {
     this.members.push(newMember);
   }
+
+  getMemberById(memberId: string) {
+    return this.angularFire.database.object('members/' + memberId)
+  }
 }
