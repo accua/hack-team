@@ -19,4 +19,13 @@ export class EditMemberComponent implements OnInit {
 
   }
 
+  beginUpdateMember(memberToUpdate) {
+    this.teamService.updateMember(memberToUpdate);
+  }
+
+  beginDeleteMember(memberToDelete) {
+    if(confirm("Are you sure you'd like to delete this member?")) {
+      this.teamService.deleteMember(memberToDelete);
+    }
+  }
 }

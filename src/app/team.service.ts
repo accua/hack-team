@@ -22,4 +22,16 @@ export class TeamService {
   getMemberById(memberId: string) {
     return this.angularFire.database.object('members/' + memberId)
   }
+
+  updateMember(updatedMember) {
+    var firebaseMember = this.getMemberById(updatedMember.$key);
+    firebaseMember.update({name: updatedMember.name,
+                          role: updatedMember.role,
+                          bio: updatedMember.bio})
+  }
+
+  deleteMember(deletedMember) {
+    var firebaseMember = this.getMemberById(deletedMember.$key);
+    firebaseMember.remove();
+  }
 }

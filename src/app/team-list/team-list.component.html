@@ -11,3 +11,6 @@
     <app-edit-member [selectedMember]="currentMember"></app-edit-member>
   </div>
 </div>
+<div *ngIf="currentRoute === '/roster-edit'">
+  <app-new-member></app-new-member>
+</div>

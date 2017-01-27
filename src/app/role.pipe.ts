@@ -1,11 +1,13 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Member } from './member.model'
 
 @Pipe({
-  name: 'role'
+  name: 'role',
+  pure: false
 })
 export class RolePipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
+  transform(input: Member[], args) {
     return null;
   }
 

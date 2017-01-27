@@ -1,4 +1,4 @@
-<app-team-list></app-team-list>
+
 <div class="container">
   <h4>Edit {{selectedMember.name}}</h4>
   <div>
@@ -8,12 +8,18 @@
   <br>
   <div>
     <label>New Role:</label>
-    <input [(ngModel)]="selectedMember.role">
+    <select [(ngModel)]="selectedMember.role">
+      <option value="Mobile Developer">Mobile Developer</option>
+      <option value="Front-end">Front-end Developer</option>
+      <option value="Back-end">Back-end Developer</option>
+    </select>
   </div>
   <br>
   <div>
     <label>New Bio:</label>
-    <input [(ngModel)]="selectedMember.bio">
+    <textarea [(ngModel)]="selectedMember.bio"></textarea>
   </div>
   <br>
 </div>
+<button (click)="beginUpdateMember(selectedMember)">Update</button>
+<button (click)="beginDeleteMember(selectedMember)">Delete</button>

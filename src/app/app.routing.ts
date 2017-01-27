@@ -25,7 +25,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'roster-edit',
-    component: EditMemberComponent
+    component: TeamListComponent
   }
 ];
 
