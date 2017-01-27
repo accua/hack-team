@@ -1,3 +1,19 @@
-<p>
-  edit-member works!
-</p>
+<app-team-list></app-team-list>
+<div class="container">
+  <h4>Edit {{selectedMember.name}}</h4>
+  <div>
+    <label>New Name:</label>
+    <input [(ngModel)]="selectedMember.name">
+  </div>
+  <br>
+  <div>
+    <label>New Role:</label>
+    <input [(ngModel)]="selectedMember.role">
+  </div>
+  <br>
+  <div>
+    <label>New Bio:</label>
+    <input [(ngModel)]="selectedMember.bio">
+  </div>
+  <br>
+</div>

@@ -1,9 +1,13 @@
 <h1 class="text-center">HackTeam</h1>
-<div *ngFor="let currentMember of members | async" (click)=goToDetail(currentMember) class="panel panel-default">
+<hr>
+<div *ngFor="let currentMember of members | async" class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">{{currentMember.name}}</h3>
+    <h3 class="panel-title" (click)=goToDetail(currentMember)>{{currentMember.name}}</h3>
   </div>
   <div class="panel-body">
     {{currentMember.bio}}
+  </div>
+  <div *ngIf="currentRoute === '/roster-edit'">
+    <app-edit-member [selectedMember]="currentMember"></app-edit-member>
   </div>
 </div>

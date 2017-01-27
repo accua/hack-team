@@ -5,11 +5,19 @@
     </div>
     <ul class="nav navbar-nav navbar-left">
       <li><a routerLink="">View Roster</a></li>
-      <li><a routerLink="new-member">Add New Member</a></li>
+      <li><a routerLink="roster-edit">Edit Roster</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a routerLink="about">About</a></li>
     </ul>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="navbar-default navbar footer">
+  <div class="container-fluid">
+    <a class="text-muted" href="https://www.github.com/accua">Andrew Accuardi, 2017</a>
+  </div>
+</footer>

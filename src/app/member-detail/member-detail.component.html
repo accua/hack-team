@@ -1,13 +1,13 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4>{{memberToDisplay.name}}</h4>
+    <h4>{{(memberToDisplay | async)?.name}}</h4>
   </div>
   <div class="panel-body">
     <div>
-      <p>{{memberToDisplay.role}}</p>
+      <p><strong>{{(memberToDisplay | async)?.role}}</strong></p>
     </div>
     <div>
-      <p>{{memberToDisplay.bio}}</p>
+      <p>{{(memberToDisplay | async)?.bio}}</p>
     </div>
   </div>
 </div>
