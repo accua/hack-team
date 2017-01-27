@@ -13,6 +13,7 @@ import { AngularFire, FirebaseListObservable} from 'angularfire2';
 export class TeamListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByRole: string = 'allHackers'
 
   constructor(private router: Router, private teamService: TeamService) { }
 
@@ -22,6 +23,10 @@ export class TeamListComponent implements OnInit {
 
   goToDetail(selectedMember) {
     this.router.navigate(['members', selectedMember.$key])
+  }
+
+  onChange(option) {
+    this.filterByRole = option;
   }
 
 }

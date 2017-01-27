@@ -1,8 +1,15 @@
 <h1 class="text-center">HackTeam</h1>
 <hr>
-<div *ngFor="let currentMember of members | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option value="allHackers" selected="selected">All Hackers</option>
+  <option value="Front-end">Front-end</option>
+  <option value="Back-end">Back-end</option>
+  <option value="Mobile">Mobile</option>
+</select>
+<br><br>
+<div *ngFor="let currentMember of members | async | role:filterByRole" class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title" (click)=goToDetail(currentMember)>{{currentMember.name}}</h3>
+    <h3 class="panel-title" (click)=goToDetail(currentMember)>{{currentMember.name}} - {{currentMember.role}}</h3>
   </div>
   <div class="panel-body">
     {{currentMember.bio}}
