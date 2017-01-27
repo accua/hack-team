@@ -1,0 +1,17 @@
+{ "members": [{
+    "name": "Andrew Accuardi",
+    "role": "Lead Back-end programmer",
+    "bio": "Born in Portland, OR, Andrew is a full-time programmer who specializes in his ability to write code for 12 hours a day and not get tired. Secret weapon: Coffee, full pot.",
+    "memberSince": "1/26/2017"
+  }, {
+    "name": "Joe Schmoe",
+    "role": "Lead front-end designer",
+    "bio": "Joe Schmoe is a world-renowned designer. He suffers from a condition called 'unconscious-restless-code syndrome' where he will literally create michealangelo-level designs while he's asleep. We actually don't sub him in while he's conscious.",
+    "memberSince": "7/23/2016"
+  }, {
+    "name": "Jane 'The Pain' Jackson",
+    "role": "Lead mobile developer",
+    "bio": "After being released from a year-long stint in prison in 2016 for hacking into all mobile phones on Verizon and AT&T's network and making them recite anti-trust legislation on full volume perpetually, well, how could you say no?",
+    "memberSince": "7/20/2016"
+  }]
+}

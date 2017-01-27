@@ -1,0 +1,9 @@
+<h1 class="text-center">HackTeam</h1>
+<div *ngFor="let currentMember of members | async" class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{currentMember.name}}</h3>
+  </div>
+  <div class="panel-body">
+    Member Since: {{currentMember.memberSince}}
+  </div>
+</div>

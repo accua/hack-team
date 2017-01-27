@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Add New Team Member</h4>
+  </div>
+  <div class="panel-body">
+    <div>
+      <label>Name</label>
+      <input #name>
+    </div>
+    <div>
+      <label>Role</label>
+      <input #role>
+    </div>
+    <div>
+      <label>Bio</label>
+      <input #bio>
+    </div>
+  </div>
+  <button class="btn btn-default" (click)="createMember(name.value, role.value, bio.value)">Submit New Member</button>
+</div>
