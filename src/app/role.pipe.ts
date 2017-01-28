@@ -34,5 +34,4 @@ export class RolePipe implements PipeTransform {
       return input;
     }
   }
-
 }

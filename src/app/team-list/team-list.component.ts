@@ -13,12 +13,20 @@ import { AngularFire, FirebaseListObservable} from 'angularfire2';
 export class TeamListComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  filterByRole: string = 'allHackers'
+  filterByRole: string = 'allHackers';
+  animate: boolean = true;
 
   constructor(private router: Router, private teamService: TeamService) { }
 
   ngOnInit() {
     this.members = this.teamService.getMembers();
+    setInterval(() => {
+      if (this.animate === true) {
+        this.animate = false;
+      } else {
+        this.animate = true;
+      }
+    }, 600);
   }
 
   goToDetail(selectedMember) {

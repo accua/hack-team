@@ -1,4 +1,7 @@
-<h1 class="text-center">HackTeam</h1>
+<div class="container text-align-center">
+  <h1 *ngIf="animate === false">HackTeam</h1>
+  <h1 *ngIf="animate">HackTeam.</h1>
+</div>
 <hr>
 <select (change)="onChange($event.target.value)">
   <option value="allHackers" selected="selected">All Hackers</option>
