@@ -1,31 +1,50 @@
 # HackTeam
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+_This application was created during week 2 Angular as a hackathon team manager_
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_**Andrew Accuardi**_
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+* _As a user, I'd like to visit a page to see a list of all team or club members._
+* _As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them._
+* _As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do._
+* _As a user, I'd like all data persisted in a database, so it's always there when I need it._
+* _As a user, I'd like to filter the list of users by their particular role in the group_
+* _As an administrator, I want to add new users to the club. (User authentication is not required)._
+* _As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details._
+* _As an administrator, need the option to delete a user, in case they leave the club or team._
 
-## Build
+## Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+You will need the following things properly installed on your computer.
 
-## Running unit tests
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+* `git clone https://github.com/accua/meal-tracker`
+* `npm install`
+* `bower install`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Running / Development
 
-## Deploying to GitHub Pages
+* [Visit here!](https://hack-team-85ecc.firebaseapp.com/)
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+## Known Bugs
 
-## Further help
+_The page is wide on the right-hand side._
+_The header is off-center._
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Technologies Used
+
+_This webpage was made using HTML, CSS, Javascript, Bootstrap, and Angular2._
+
+### License
+
+Copyright (c) 2017 _Andrew Accuardi_
+
+*Licensed under the GPL License*
