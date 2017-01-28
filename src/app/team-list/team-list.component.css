@@ -13,5 +13,9 @@ div {
 }
 
 .text-align-center {
-  margin-left: 300px;
+  text-align: center;
+}
+
+.white {
+  color: white;
 }
