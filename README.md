@@ -1,6 +1,6 @@
 # HackTeam
 
-_This application was created during week 2 Angular as a hackathon team manager_
+_This application was created during week 2 Angular as tool for hackathon team management_
 
 _**Andrew Accuardi**_
 
